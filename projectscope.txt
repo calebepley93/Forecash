@@ -1,0 +1,92 @@
+IDEA
+
+A custom sportsbook page for bets I would like to make 
+
+Main bets offered include
+
+Award races for major American sportsbook
+Oscars and award shows
+Politics
+Box office
+
+How will bets be taken?
+
+Options
+
+--fixed odds
+--exchange akin to Polymarket or PredictIt [x]
+
+Design
+
+pretty close a clone of Polymarket
+
+Differentiation
+
+Bet types offered
+
+Name 
+
+Forecash
+
+Colors: 
+
+A light blue and purple color
+
+blue #3F64F2
+purple #7D47E6
+
+
+market functionality
+
+- there are four buttons at the top of the page
+    - all
+    - Politics
+    - hollywood
+    - sports
+
+- when the user clicks on a button, the page will filter the markets by the category
+- category is defined by the market type class
+- the background color of the button should change to "white" for the active class
+- the background color of the button should change to var()"light blue" for the inactive class
+
+
+Login functionality
+
+- login button in header
+- when user clicks this button, a modal will appear
+- the modal will have a form with two inputs
+    - email
+    - password
+
+- the modal will have a button that says "login"
+- when the user clicks this button, the modal will close and the user will be logged in
+
+- the modal will have a button that says "sign up"
+
+Things to consider 
+
+- how to handle the user's account balance
+- how to handle the user's bets
+- how to handle the user's account information
+
+How to handle the user's account information (things I don't know)
+
+- i don't know where the information gets sent when a user signs up or logs in
+- i don't know how to store user information securely 
+
+Things I need to do
+
+- implement hashing for passwords
+    * hashing is a way to encrypt passwords, creates fixed-length sequence of random characters
+    * hashing is a one way function
+    * hashing is a deterministic function
+    * hashing is a function that takes in a string and returns a string
+
+
+How it's done
+
+1. create index.php, login.php, register.php, and logout.php
+2. create a database called "users" in php admin and a table with names
+3. create a form in index.php with email and password inputs
+4. create a form in register.php with email, password, and password confirmation inputs
+

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --big-padding: 90px;
+    --med-padding: 40px;
+    --sm-padding: 24px;
+    --purple: #3D1755;
+    --light-blue: rgb(16, 223, 242);
+    --white: #F7F7F7;
+    --black: #222222;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-markets {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-markets h1 {
+    font-weight: 400;
+    font-size: 42px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.your-class {
+    padding: 60px 90px;
+    
+}
+
+
+
+.market-box {
+    width: 100%;
+    border-radius: 8px;
+   
+}
+
+.market-box img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.market-box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+.title-container {
+    padding: 16px;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: none;
+    border-right: 1p solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.market-price {
+    display: flex;
+    width: 100%;
+    gap: .75rem;
+    margin-top: 24px;
+}
+
+.yes-price {
+    color: green;
+}
+
+.no-price {
+    color: red;
+}
+
+.slick-slide {
+    margin: 8px 16px
+}
+
+.slick-arrow {
+    display: none !important;
+}

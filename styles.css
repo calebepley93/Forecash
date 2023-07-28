@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --big-padding: 90px;
+    --med-padding: 40px;
+    --sm-padding: 24px;
+    --purple: #3D1755;
+    --light-blue: rgb(16, 223, 242);
+    --light-grey: rgb(220, 232, 233);
+    --dark-grey: #2e2c30c9;
+    --white: #F7F7F7;
+    --black: #222222;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-grey);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 24px;
+    background: var(--purple);
+    width: 100%;
+    align-items: center;
+    color: var(--white);
+}
+
+.max-width-cont {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 25px;
+}
+
+.logo-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.header-icon-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu {
+    width: 50%;
+    font-size: 20px;
+}
+.nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item:hover {
+    color: var(--light-blue);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    text-align: right;
+}
+
+.login {
+    border: 1px solid var(--white);
+    padding: 8px 16px;
+    background-color: var(--white);
+    color: var(--purple);
+    border-radius: 8px;
+}
+
+.login:hover {
+    background-color: var(--purple);
+    color: var(--white);
+    transition: .3s ease-in-out;
+}
+
+.signup {
+    border: 1px solid var(--white);
+    padding: 8px 16px;
+    background-color: var(--purple);
+    color: var(--white);
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+.signup:hover {
+    background-color: var(--white);
+    color: var(--purple);
+    transition: .3s ease-in-out;
+}
+
+.buttons {
+    justify-self: right;
+    display: flex;
+}
+
+.success_msg {
+    color: green;
+}
+
+.buttons a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: center;
+}
+
+.lower-menu {
+    padding: 24px 90px;
+    width: 100%;
+    background-color: var(--purple);
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    display: none;
+    z-index: 1000;
+}
+
+
+.svg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svg-container:hover {
+    color: var(--light-blue);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.svg-container p {
+    margin-top: 8px;
+}
+
+/* begins slider */
+
+
+.featured-markets {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-markets h1 {
+    font-weight: 700;
+    font-size: 42px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 32px;
+    text-align: center;
+    color: var(--black);
+}
+
+
+.your-class {
+    padding: 60px 90px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    
+}
+
+
+
+.market-box {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.market-box img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.market-box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+.title-container {
+    padding: 16px;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: none;
+    border-right: 1p solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--white);
+    min-height: 155px;
+}
+
+.market-price {
+    display: flex;
+    width: 100%;
+    gap: .75rem;
+    margin-top: 24px;
+}
+
+.yes-price {
+    color: green;
+}
+
+.no-price {
+    color: red;
+}
+
+.slick-slide {
+    margin: 8px 16px
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+#slick-slide-control02, #slick-slide-control01, #slick-slide-control00 {
+    display: none !important;
+}
+
+/* begin how it works */
+
+.how-it-works {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background: linear-gradient(90deg, #3D1755 0%, #9457b9 100%);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.how-header {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.how-icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    width: 100%;
+    gap: 24px;
+}
+
+.how-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.how-icon i {
+    font-size: 48px;
+}
+
+.how-icon-header {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.how-icon p {
+    margin-top: 24px;
+    line-height: 1.5;
+}
+
+/* begin market section */
+
+.home-market-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.market-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go-to-markets-btn {
+    padding: 6px 10px;
+    background-color: var(--dark-grey);
+    border-radius: 20px;
+    border: none;
+}
+
+.go-to-markets-btn:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    transition: 0.3s ease-in-out;
+}
+
+.go-to-markets-btn i {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.market-arrow, .market-types {
+    display: flex;
+    align-items: center;
+}
+
+.market-arrow h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.market-pill-btn {
+    padding: 16px;
+    width: 110px;
+    border-radius: 20px;
+    border: none;
+    /* background-color: var(--white); */
+    margin-left: 8px;
+}
+
+
+
+.market-pill-btn:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.market-bottom-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+.market-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.market-title-card-bottom {
+    width: 100%;
+    background-color: var(--white);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-top: -8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: space-between;
+}
+
+.market-kind {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--purple);
+    padding-top: 24px;
+}
+
+
+
+.market-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+.boxdif {
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.no-price {
+    margin-left: 16px;
+}
+
+.price-wrapper {
+    display: flex;
+}
+
+.active {
+    background-color: var(--white);
+}
+
+.inactive {
+    background-color: var(--light-grey); /* Replace --light-blue with the actual value */
+}
+
+/* begin footer */
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.logo-slug {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-text-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-text-wrapper img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.footer-logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-slug {
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.site-map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.site-map li {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.site-map li:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: 0.3s ease-in-out;
+}
+
+.site-map li:first-of-type {
+    margin-top: 16px;
+}
+
+.socials li {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.socials li:first-of-type {
+    margin-top: 16px;
+}
+
+.socials li:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: 0.3s ease-in-out;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terms-policy {
+    display: flex;
+    align-items: center;
+}
+
+.terms-policy p:first-of-type {
+    margin-right: 40px;
+}
+
+/* begin login modal */
+
+.modal {
+    display: none;  
+    position: fixed; 
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+
+
+.modal-content {
+    margin: 90px auto;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: var(--white);
+    color: var(--black);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.close {
+    color: var(--black);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: var(--light-grey);
+    transition: .3s ease-in-out;
+}
+
+.login-header {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-divider {
+    width: 50px;
+    height: 1px;
+    background-color: var(--light-grey);
+    margin-bottom: 16px;
+}
+
+.login-subheader {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.modal-content form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+}
+
+.modal-content form input:focus {
+    outline: none;
+    border: 1px solid var(--ligh-blue);
+}
+
+.modal-content form button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.modal-content form button:hover {
+    cursor: pointer;
+    background-color: var(--dark-grey);
+    transition: 0.3s ease-in-out;
+}
+
+.signup-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup-login {
+    margin-bottom: 16px;
+}
+
+.signup-login-container a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--light-blue);
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-login-container a:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+    transition: 0.3s ease-in-out;
+}
+
+/* begin signup modal  */
+
+
+
+
+
+@media screen and (max-width: 999px) {
+    .lower-menu {
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    footer {
+        padding-bottom: 130px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .modal-content {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 60%;
+    }
+
+    .header-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .your-class {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .featured-markets h1 {
+        font-size: 32px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .how-it-works {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .market-bottom-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-market-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .market-top-container {
+        flex-direction: column;
+    }
+
+    .go-to-markets-btn {
+        display: none;
+    }
+
+    .markets-header {
+        margin-bottom: 24px;
+    }
+
+    .market-arrow h3 {
+        margin-right: 0px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 499px) {
+    .lower-menu {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .modal-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 80%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .site-map h3 {
+        margin-top: 24px;
+    }
+
+    .socials h3 {
+        margin-top: 24px;
+    }
+
+    footer {
+        padding-bottom: 130px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .your-class {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .featured-markets h1 {
+        font-size: 32px;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .how-it-works {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .how-icon-container {
+        grid-template-columns: 1fr;
+    }
+
+    .market-bottom-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home-market-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .market-pill-btn:first-of-type {
+        padding-left: 23px;
+        padding-right: 23px;
+        width: auto;
+    }
+
+    .market-pill-btn:nth-of-type(2) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    .market-pill-btn:nth-of-type(3) {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    .market-pill-btn:last-of-type {
+        padding-left: 23px;
+        padding-right: 23px;
+        width: auto;
+    }
+
+}

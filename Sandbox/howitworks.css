@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --big-padding: 90px;
+    --med-padding: 40px;
+    --sm-padding: 24px;
+    --purple: #3D1755;
+    --light-blue: rgb(16, 223, 242);
+    --white: #F7F7F7;
+    --black: #222222;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.how-it-works {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background: linear-gradient(90deg, #3D1755 0%, #9457b9 100%);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-header {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.how-icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    width: 100%;
+    gap: 24px;
+}
+
+.how-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.how-icon i {
+    font-size: 48px;
+}
+
+.how-icon-header {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.how-icon p {
+    margin-top: 24px;
+    line-height: 1.5;
+}

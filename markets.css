@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --big-padding: 90px;
+    --med-padding: 40px;
+    --sm-padding: 24px;
+    --purple: #3D1755;
+    --dark-grey: #2e2c30c9;
+    --light-blue: rgb(16, 223, 242);
+    --light-grey: rgb(220, 232, 233);
+    --white: #F7F7F7;
+    --black: #222222;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-grey);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.home-market-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.market-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go-to-markets-btn {
+    padding: 6px 10px;
+    background-color: var(--dark-grey);
+    border-radius: 20px;
+    border: none;
+}
+
+.go-to-markets-btn:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    transition: 0.3s ease-in-out;
+}
+
+.go-to-markets-btn i {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.market-arrow, .market-types {
+    display: flex;
+    align-items: center;
+}
+
+.market-arrow h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.market-pill-btn {
+    padding: 16px;
+    width: 110px;
+    border-radius: 20px;
+    border: none;
+    /* background-color: var(--white); */
+    margin-left: 8px;
+}
+
+
+
+.market-pill-btn:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.market-bottom-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+.market-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.market-title-card-bottom {
+    width: 100%;
+    background-color: var(--white);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-top: -8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: space-between;
+}
+
+.market-kind {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--purple);
+    padding-top: 24px;
+}
+
+/* repeats */
+
+.yes-price {
+    color: green;
+}
+
+.no-price {
+    color: red;
+}
+
+/* repeats  */
+
+.market-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+.boxdif {
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.no-price {
+    margin-left: 16px;
+}
+
+.price-wrapper {
+    display: flex;
+}
+
+.active {
+    background-color: var(--white);
+}
+
+.inactive {
+    background-color: var(--light-grey); /* Replace --light-blue with the actual value */
+}
+
+
+
+@media screen and (max-width: 999px) {
+    
+    .market-bottom-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-market-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .market-top-container {
+        flex-direction: column;
+    }
+
+    .go-to-markets-btn {
+        display: none;
+    }
+
+    .markets-header {
+        margin-bottom: 24px;
+    }
+
+    .market-arrow h3 {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+        
+        .market-bottom-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .home-market-container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    
+        .market-pill-btn:first-of-type {
+            padding-left: 23px;
+            padding-right: 23px;
+            width: auto;
+        }
+
+        .market-pill-btn:nth-of-type(2) {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: auto;
+        }
+
+        .market-pill-btn:nth-of-type(3) {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: auto;
+        }
+
+        .market-pill-btn:last-of-type {
+            padding-left: 23px;
+            padding-right: 23px;
+            width: auto;
+        }
+}
